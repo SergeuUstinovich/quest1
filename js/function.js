@@ -1,3 +1,30 @@
+const htt = 'https://github.com/SergeuUstinovich/quest1/blob/main/js/xhr.js';
+
+
+function sendRequest(method, url){
+    return new Promise((resolve, reject)=>{
+        const xhr = new XMLHttpRequest();
+
+        xhr.open(method, url);
+        xhr.responseType = 'json';
+    
+        xhr.onload = () =>{
+        if (xhr.status >= 400){
+            reject(xhr.response)
+        }else{
+            resolve(xhr.response)
+        }
+    };
+    xhr.onerror = () =>{
+        reject(xhr.response)
+    };
+        xhr.send();        
+    })  
+};
+sendRequest('GET', htt)
+.then(data=>console.log(data))
+.catch(err=>console.log(err))
+
 //фильтр выплывающее
 function displ(){
     document.getElementById("myDropdown").classList.toggle("show");
