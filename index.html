@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    <div class="table">
+        
+        <div class="head"> 
+            <div class="frame1">
+               <h1 class="Arrivals">Новые поступления</h1>
+               <p class="new_Memders">Более 400+ новых участников</p>
+           </div>
+           <div class="frame2">
+               <div class="dropdown">
+                   <div class="but3" onclick="displ()">Фильтр
+                       <span class="material-symbols-outlined">
+                       arrow_drop_down
+                       </span>
+                   </div>
+                   <div class="dropdown-content" id="myDropdown">
+                       <button data-skill="all">Все</button>
+                       <button data-skill="intertico">Intertico</button>
+                       <button data-skill="agoda">Agoda</button>
+                       <button data-skill="theHill">The Hill</button>
+                   </div>
+               </div>
+               <button class="but1">Новый отчёт</button>
+               <button class="but2">Создать</button>
+           </div>
+       </div> 
+           <div class="col_Titles">
+               <div class="hum">Программисты и навыки </div>
+               <div class="earn st inv">ДОХОД
+                    <div id="sor-definans" class="sort" title="Сортировать по рейтингу">
+                        <span class="material-symbols-outlined">
+                    expand_less
+                        </span>
+                    </div>
+                    <div id="sor-finans" class="sort" title="Сортировать по рейтингу">
+                        <span class="material-symbols-outlined">
+                    expand_more
+                        </span>
+                    </div>
+               </div>
+               <div class="comm inv">КОМИССИЯ</div>
+               <div class="comp inv">КОМПАНИЯ</div>
+               <div class="reit st inv">РЕЙТИНГ 
+                   <div id="sor-desc" class="sort" title="Сортировать по рейтингу">
+                       <span class="material-symbols-outlined">
+                       expand_less
+                       </span>
+                   </div>
+                   <div id="sor-asc" class="sort" title="Сортировать по рейтингу">
+                       <span class="material-symbols-outlined">
+                       expand_more
+                       </span>
+                   </div>
+               </div>
+               <div class="butt" id="btnContainer">
+                <div class="sort btn active" onclick="gridView()" title="Отображение плиткой">
+                    <span class="material-symbols-outlined">
+                        apps
+                    </span>
+                </div>
+                <div class="sort btn " onclick="listView()" title="Отображение списком">
+                    <span class="material-symbols-outlined">
+                        more_vert
+                    </span>
+                </div>
+                </div>
+           </div>
+           <div class="body" id="sor">
+            <!-- <div class="columns col" > -->
+               <div class="human box intertico rows" data-reit="5" data-finans="8">
+                    <div class="hum"><img class="b" src="images/boy.png" alt=""> 
+                           <h1 class="name1">Brad Simmons</h1>
+                           <p class="skills1">HTML, JS, ReactJS</p>
+                   </div>
+                   <div class="earn inv">
+                           <h1>$8,000,000</h1>
+                           <p>В процессе</p>
+                   </div>
+                   <div class="comm inv">
+                           <h1>$520</h1>
+                           <p>Оплачено</p>
+                   </div>
+                   <div class="comp inv">
+                           <h1>Intertico</h1>
+                           <p>Web, UI/UX Design</p>
+                   </div>
+                   <div class="reit">
+                           <h1><span class="material-icons">
+                               star star star star star
+                               </span></h1>
+                           <p>Лучший рейтинг</p>
+                   </div>
+                   <div class="butt">
+                           <button class="buut">Посмотреть предложения</button>
+                   </div> 
+               </div>
+                <div class="human box agoda rows" data-reit="4.5" data-finans="23">
+                   <div class="hum"><img class="b" src="images/Avatar.png" alt="">
+                       <h1 class="name1">Jessie Clarcson</h1>
+                       <p class="skills1">C#, ASP.NET, MS SQL</p>
+                   </div>
+                   <div class="earn inv">
+                       <h1>$23,000,000</h1>
+                       <p>В ожидании</p>
+                   </div>
+                   <div class="comm inv">
+                       <h1>$1,600</h1>
+                       <p>Отклонен</p>
+                   </div>
+                   <div class="comp inv">
+                       <h1>Agoda</h1>
+                       <p>Houses & Hotels</p>
+                   </div>
+                   <div class="reit">
+                       <h1><span class="material-icons">
+                           star star star star star_half
+                           </span></h1>
+                       <p>Лучше среднего</p>
+                   </div>
+                   <div class="butt">
+                       <button class="buut">Посмотреть предложения</button>
+                   </div> 
+               </div>
+            <!-- </div> -->
+            <!-- <div class="columns col"> -->
+               <div class="human box intertico rows" data-reit="3" data-finans="34">
+                   <div class="hum"><img class="b" src="images/boy-22.png" alt="">
+                       <h1 class="name1">Lebron Wayde</h1>
+                       <p class="skills1">PHP, Laravel, VueJS</p>
+                   </div>
+                   <div class="earn inv">
+                       <h1>$34,000,000</h1>
+                       <p>Оплачено</p>
+                   </div>
+                   <div class="comm inv">
+                       <h1>$6,700</h1>
+                       <p>Оплачено</p>
+                   </div>
+                   <div class="comp inv">
+                       <h1>Intertico</h1>
+                       <p>Web, UI/UX Design</p>
+                   </div>
+                   <div class="reit">
+                       <h1><span class="material-icons">
+                           star star star star_border star_border
+                           </span></h1>
+                       <p>Средний</p>
+                   </div>
+                   <div class="butt">
+                       <button class="buut">Посмотреть предложения</button>
+                   </div>
+               </div>        
+               <div class="human box theHill rows" data-reit="4" data-finans="2.6">
+                   <div class="hum"><img class="b" src="images/skin1.png" alt="">
+                       <h1 class="name1">Natali Trump</h1>
+                       <p class="skills1">Python, PostgreSQL, ReactJS</p>
+                   </div>
+                   <div class="earn inv">
+                       <h1>$2,600,000</h1>
+                       <p>Оплачено</p>
+                   </div>
+                   <div class="comm inv">
+                       <h1>$14,000</h1>
+                       <p>В ожидании</p>
+                   </div>
+                   <div class="comp inv">
+                       <h1>The Hill </h1>
+                       <p>Insurance</p>
+                   </div>
+                   <div class="reit">
+                       <h1><span class="material-icons">
+                           star star star star star_border
+                           </span></h1>
+                       <p>Выше среднего</p>
+                   </div>
+                   <div class="butt">
+                       <button class="buut">Посмотреть предложения</button>
+                   </div>
+               </div>
+            <!-- </div> -->
+        </div>  
+    </div>
+<script src="js/function.js"></script>
+</body>
+</html>
