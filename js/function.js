@@ -1,4 +1,5 @@
-const htt = 'https://github.com/SergeuUstinovich/quest1/blob/main/packej.json';
+const htt = 'https://raw.githubusercontent.com/SergeuUstinovich/quest1/main/packej.json';
+
 
 function sendRequest(method, url){
     return new Promise((resolve, reject)=>{
