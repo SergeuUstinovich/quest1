@@ -1,43 +1,43 @@
-const htt = 'https://jsonplaceholder.typicode.com/users';
+const htt = 'https://github.com/SergeuUstinovich/quest1/blob/main/packej.json';
 
-const dat = [
-    {
-    firstName:'Brad', 
-    lastName: 'Simmons',
-    skill: ['HTML','JS','ReactJS'],
-    earnin: ['$8 000 000', 'В процессе'],
-    commis: ['$520','Оплачено'],
-    compan: ['Intertico','Web, UI/UX Design'],
-    reiting: 5
-},
-{
-    name: ['Jessie', 'Clarcson'],
-    skill: ['C#','ASP.NET','MS SQL'],
-    earnin: ['$23 000 000', 'В ожидании'],
-    commis: ['$1 600','Отклонен'],
-    compan: ['Agoda','Houses & Hotels'],
-    reiting: 4.5
-},
-{
-    name: ['Lebron', 'Wayde'],
-    skill: ['PHP','Laravel','VueJS'],
-    earnin: ['$34 000 000', 'Оплачено'],
-    commis: ['$6 700','Оплачено'],
-    compan: ['Intertico','Web, UI/UX Design'],
-    reiting: 3
-},
-{
-    name: ['Natali', 'Trump'],
-    skill: ['Python','PostgreSQL','ReactJS'],
-    earnin: ['$2 600 000', 'Оплачено'],
-    commis: ['$14 000','В ожидании'],
-    compan: ['The Hill','Insurance'],
-    reiting: 5
-}
-];
+// const dat = [
+//     {
+//     firstName:'Brad', 
+//     lastName: 'Simmons',
+//     skill: ['HTML','JS','ReactJS'],
+//     earnin: ['$8 000 000', 'В процессе'],
+//     commis: ['$520','Оплачено'],
+//     compan: ['Intertico','Web, UI/UX Design'],
+//     reiting: 5
+// },
+// {
+//     name: ['Jessie', 'Clarcson'],
+//     skill: ['C#','ASP.NET','MS SQL'],
+//     earnin: ['$23 000 000', 'В ожидании'],
+//     commis: ['$1 600','Отклонен'],
+//     compan: ['Agoda','Houses & Hotels'],
+//     reiting: 4.5
+// },
+// {
+//     name: ['Lebron', 'Wayde'],
+//     skill: ['PHP','Laravel','VueJS'],
+//     earnin: ['$34 000 000', 'Оплачено'],
+//     commis: ['$6 700','Оплачено'],
+//     compan: ['Intertico','Web, UI/UX Design'],
+//     reiting: 3
+// },
+// {
+//     name: ['Natali', 'Trump'],
+//     skill: ['Python','PostgreSQL','ReactJS'],
+//     earnin: ['$2 600 000', 'Оплачено'],
+//     commis: ['$14 000','В ожидании'],
+//     compan: ['The Hill','Insurance'],
+//     reiting: 5
+// }
+// ];
 
-const datJson = JSON.stringify(dat);
-console.log(datJson)
+// const datJson = JSON.stringify(dat);
+// console.log(datJson)
 
 
 function sendRequest(method, url){
